@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 79158097}
   - component: {fileID: 79158096}
+  - component: {fileID: 79158098}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -174,6 +175,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &79158098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79158095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c0e1f24e2ce4a5b9bf1f3a7499cd45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObjects: []
+  objectToPool: {fileID: 3823934051149806472, guid: 125784fffed542e43adb64908dfecaa4, type: 3}
+  amountToPool: 20
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,6 +642,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590138454}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1635690334 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8171048022750986117, guid: 4ba5e4ec4f34a7f4fa79c8da83af9651, type: 3}
+  m_PrefabInstance: {fileID: 8171048021568691121}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1635690335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635690334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e917c52987daa41af6a0305d9813c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 0}
 --- !u!850595691 &1862879702
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -865,6 +899,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8171048022343308724, guid: 4ba5e4ec4f34a7f4fa79c8da83af9651, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8171048022343308724, guid: 4ba5e4ec4f34a7f4fa79c8da83af9651, type: 3}
       propertyPath: projectilePrefab
       value: 
