@@ -9,10 +9,6 @@ public class PlayerController2 : MonoBehaviour
     [SerializeField] float xRange;
 
     [SerializeField] private GameObject projectilePrefab;
-    void Start()
-    {
-        
-    }
 
     
     void Update()
