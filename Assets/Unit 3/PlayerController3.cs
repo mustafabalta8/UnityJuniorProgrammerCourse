@@ -18,7 +18,7 @@ public class PlayerController3 : MonoBehaviour
     [SerializeField] private bool isOnGround=true;
     [SerializeField] private bool isGameOver;
 
-    public static PlayerController3 instance;
+    public static PlayerController3 Instance { get; private set; }
 
     public bool IsGameOver { get => isGameOver; set => isGameOver = value; }
 
@@ -33,9 +33,9 @@ public class PlayerController3 : MonoBehaviour
     }
     private void Singelton()
     {
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
         }
         else
         {

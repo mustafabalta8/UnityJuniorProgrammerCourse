@@ -8,7 +8,7 @@ public class MoveLeft3 : MonoBehaviour
 
     private void Update()
     {
-        if(PlayerController3.instance.IsGameOver==false)
+        if(PlayerController3.Instance.IsGameOver==false)
         transform.Translate(Vector3.left * Time.deltaTime * speed);
 
         if (gameObject.tag == "Obstacle" && transform.position.x < -15)
